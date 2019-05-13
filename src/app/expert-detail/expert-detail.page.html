@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar class="new-background-color-header">
+    <ion-title>ข้อมูลผู้เชี่ยวชาญ</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div align="center">
+    <div style="margin-top: 15%">
+      <span>
+        <img class="img-create" src="{{metaExpert.img}}"  />
+        <h3>เลือกรูป</h3>
+      </span>
+    </div>
+  </div>
+  <ion-grid padding>
+    <ion-row>
+      <ion-col>
+        <span class="labal">ชื่อเล่น</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="" [(ngModel)]="metaExpert.nick_name"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">ชื่อ - นามสกุล</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="" [(ngModel)]="metaExpert.fullname"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">ที่อยู่</span>
+      </ion-col>
+      <ion-col>
+        <ion-textarea class="custom-input textarea" placeholder="" [(ngModel)]="metaExpert.address"></ion-textarea>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">โทรศัพท์ที่ติดต่อได้</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="" [(ngModel)]="metaExpert.phone"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">E-mail</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="" [(ngModel)]="metaExpert.email"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">Line ID</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="" [(ngModel)]="metaExpert.line_id"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">การศึกษา</span>
+      </ion-col>
+      <ion-col>
+        <ion-textarea class="custom-input textarea" placeholder="" [(ngModel)]="metaExpert.education"></ion-textarea>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">การฝึกอบรมณ์</span>
+      </ion-col>
+      <ion-col>
+        <ion-textarea class="custom-input textarea" placeholder="" [(ngModel)]="metaExpert.training"></ion-textarea>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">การทำงานในอดิต-ปัจจุบัน</span>
+      </ion-col>
+      <ion-col>
+        <ion-textarea class="custom-input textarea" placeholder="" [(ngModel)]="metaExpert.career_history"></ion-textarea>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">ผลงานทางวิชาการ</span>
+      </ion-col>
+      <ion-col>
+        <ion-textarea class="custom-input textarea" placeholder="" [(ngModel)]="metaExpert.academic_performance"></ion-textarea>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button color="light" (click)="back()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

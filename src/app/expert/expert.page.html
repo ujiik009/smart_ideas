@@ -1,0 +1,56 @@
+<ion-content>
+  <div class="main">
+    <ion-grid style="margin-top: 15%;">
+      <ion-row>
+        <!-- <ion-col></ion-col> -->
+        <ion-col style="height: auto;">
+          <div style="width: 100;" align="center">
+            <div class="box-family ">
+              <img (click)="showExpert(family.expert_1)" onerror="this.src='/assets/img/exp.png'" src="{{family.expert_1.img}}" style="width: 100%;height: 100%;">
+              <div class="span-family" (click)="showCreateExpert(1)">
+                <span>
+                  <img class="create-icon" src="/assets/img/create-icon.png" />
+                </span>
+                <span>เพิ่ม <br /> ผู้เชี่ยวชาญ</span>
+              </div>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <!-- <ion-col></ion-col> -->
+        <ion-col style="height: auto;">
+          <div style="width: 100;" align="center">
+            <div class="box-family ">
+              <img (click)="showExpert(family.expert_3)" onerror="this.src='/assets/img/exp.png'" src="{{family.expert_2.img}}" style="width: 100%;height: 100%;">
+              <div class="span-family" (click)="showCreateExpert(2)">
+                <span>
+                  <img class="create-icon" src="/assets/img/create-icon.png" />
+                </span>
+                <span>เพิ่ม <br /> ผู้เชี่ยวชาญ</span>
+              </div>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col style="height: auto;">
+            <div style="width: 100;" align="center">
+              <div class="box-family ">
+                <img (click)="showExpert(family.expert_3)" onerror="this.src='/assets/img/exp.png'" src="{{family.expert_3.img}}" style="width: 100%;height: 100%;">
+                <div class="span-family" (click)="showCreateExpert(3)">
+                  <span>
+                    <img class="create-icon" src="/assets/img/create-icon.png" />
+                  </span>
+                  <span>เพิ่ม <br /> ผู้เชี่ยวชาญ</span>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+      </ion-row>
+     
+    </ion-grid>
+    
+  </div>
+  <div style="width: 100%" >
+      <img class="img-1" src="/assets/img/img-1.png" style="width: 40%;" />
+    </div>
+</ion-content>

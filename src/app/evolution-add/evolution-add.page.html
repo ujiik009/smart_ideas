@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar class="new-background-color-header">
+    <ion-title>น้อง {{detail.nick_name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid padding>
+    <ion-row>
+      <ion-col>
+        <span class="labal">ส่วนสูง</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="" [(ngModel)]="data.height"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">น้ำหนัก</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="" [(ngModel)]="data.weight"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">ข้อมูลอื่น</span>
+      </ion-col>
+      <ion-col>
+        <ion-textarea class="custom-input textarea" 
+        placeholder="" [(ngModel)]="data.other"></ion-textarea>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div align="center">
+          <ion-button color="success" class="my-width" large (click)="save()">
+            <b>บันทึก</b>
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

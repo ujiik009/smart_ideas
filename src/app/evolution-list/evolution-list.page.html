@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar class="new-background-color-header">
+    <ion-title>น้อง {{chileDetail.nick_name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div style="margin-top: 20%;">
+    <ion-item *ngFor="let evolution of evolutions">
+
+      <ion-label text-wrap>
+        <ion-text >
+          <h3>วันที่ {{displayTime(evolution.date)}}</h3>
+        </ion-text>
+       
+        <ion-text >
+          <p>น้ำหนัก : {{evolution.weight}}</p>
+        </ion-text>
+        <ion-text >
+          <p>ส่วนสูง : {{evolution.height}}</p>
+        </ion-text>
+        <ion-text >
+          <p>อื่นๆ : {{evolution.other}}</p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+  </div>
+
+
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button color="light" (click)="back()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="light" (click)="addEvolution()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

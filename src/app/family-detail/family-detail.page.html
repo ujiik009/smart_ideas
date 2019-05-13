@@ -1,0 +1,20 @@
+
+<ion-content>
+  <div align="center">
+    <div style="margin-top: 15%">
+      <span>
+        <img class="img-create" src="{{family.familyPicture}}" />
+       
+        <ion-item>
+          <ion-label>ครอบครัว คุณ</ion-label>
+          <ion-label><h2>{{family.familyName}}</h2></ion-label>
+        </ion-item>
+      </span>
+    </div>
+  </div>
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button color="light" (click)="back()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

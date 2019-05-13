@@ -1,0 +1,53 @@
+<ion-content>
+  <ion-grid style="margin-top: 15%;">
+    <ion-row>
+      <!-- <ion-col></ion-col> -->
+      <ion-col style="height: auto;">
+        <div style="width: 100;" align="center">
+          <div class="box-family ">
+            <img (click)="showfamily(family)" onerror="this.src='/assets/img/family-img-create.png'"  src="{{genPath(family.familyPicture)}}" style="width: 100%;height: 100%;">
+            <div class="span-family" (click)="createFamily()">
+              <span>
+                <img class="create-icon" src="/assets/img/create-icon.png" />
+              </span>
+              <span>เพิ่ม <br /> ครอบครัว</span>
+            </div>
+          </div>
+        </div>
+  
+      </ion-col>
+      <!-- <ion-col></ion-col> -->
+    </ion-row>
+    <ion-row>
+      <ion-col style="height: auto;">
+        <div style="width: 100;" align="center">
+          <div class="box-family " >
+            <img (click)="showDetailChild(family.child_1)" onerror="this.src='/assets/img/family-img-create.png'" src="{{genPath(family.child_1.img)}}"  style="width: 100%;height: 100%;">
+            <div class="span-family" (click)="createChild(1)">
+              <span>
+                <img class="create-icon" src="/assets/img/create-icon.png" />
+              </span>
+              <span>เพิ่ม <br /> ลูกคนที่ 1</span>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col style="height: auto;">
+        <div style="width: 100;" align="center">
+          <div class="box-family " >
+            <img (click)="showDetailChild(family.child_2)" onerror="this.src='/assets/img/family-img-create.png'" src="{{genPath(family.child_2.img)}}" style="width: 100%;height: 100%;" >
+            <div class="span-family" (click)="createChild(2)">
+              <span>
+                <img class="create-icon" src="/assets/img/create-icon.png" />
+              </span>
+              <span>เพิ่ม <br /> ลูกคนที่ 2</span>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div style="width: 100%">
+    <img class="img-1" src="/assets/img/img-1.png" style="width: 40%;"/>
+  </div>
+</ion-content>

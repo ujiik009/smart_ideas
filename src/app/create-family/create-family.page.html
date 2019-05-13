@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar class="new-background-color-header">
+    <ion-title>เพิ่มข้อมูลครอบครัว</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button color="light" (click)="back()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <div align="center">
+    <div style="margin-top: 15%">
+      <span>
+        <img class="img-create" src="{{img}}" (click)="selectImg()"/>
+        <h3>เพิ่มรูปครอบครัว</h3>
+        <ion-item>
+          <!-- <ion-label>Default Label</ion-label> -->
+          <ion-input placeholder="ชื่อครอบครัว" [(ngModel)]="familyName"></ion-input>
+        </ion-item>
+        <ion-row class="btn-group">
+          <ion-col>
+            <div align="center">
+              <ion-button color="danger" class="my-width" large>
+                <b>ลบ</b>
+              </ion-button>
+            </div>
+
+          </ion-col>
+
+          <ion-col>
+            <div align="center">
+              <ion-button color="success" class="my-width" large (click)="saveFamily()">
+                <b>บันทึก</b>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </span>
+    </div>
+  </div>
+
+</ion-content>

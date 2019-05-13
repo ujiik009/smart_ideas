@@ -1,0 +1,74 @@
+<ion-content>
+  {{data}}
+
+  <div align="center">
+    <div style="margin-top: 15%">
+      <span>
+        <img onerror="this.src='/assets/img/family-img-create.png'" class="img-create" src="{{metaChild.img}}"
+          />
+        <h3>เลือกรูป</h3>
+      </span>
+
+    </div>
+  </div>
+  <ion-grid padding>
+    <ion-row>
+      <ion-col>
+        <span class="labal">ชื่อเล่น</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="Nickname" [(ngModel)]="metaChild.nick_name"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">ชื่อ - นามสกุล</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="full name" [(ngModel)]="metaChild.full_name"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">เพศ</span>
+      </ion-col>
+      <ion-col>
+        <span class="gender-label">{{metaChild.gender}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">หมู่เลือด</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="blood type" [(ngModel)]="metaChild.blood_type"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">วันเกิด</span>
+      </ion-col>
+      <ion-col>
+        <ion-datetime class="custom-input" display-format="DD MMMM YYYY" [(ngModel)]="metaChild.birthday">
+        </ion-datetime>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">อื่น ๆ</span>
+      </ion-col>
+      <ion-col>
+
+        <ion-textarea class="custom-input textarea" [(ngModel)]="metaChild.description"
+          placeholder="Enter more information here..."></ion-textarea>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button color="light" (click)="back()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

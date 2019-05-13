@@ -1,0 +1,7 @@
+{
+  "name": "smart_ideas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

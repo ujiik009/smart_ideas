@@ -1,0 +1,24 @@
+<ion-content>
+  <!-- <ion-button (click)="login()">LOGIN</ion-button> -->
+
+  <div align="center">
+    <!-- logo -->
+    <ion-img src="/assets/img/logo.png" style="width: 200px;height: 200px;margin-top:15vh"></ion-img>
+  </div>
+  <div align="center" style="padding-left: 50px;padding-right: 50px;">
+    <!-- login -->
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input [(ngModel)]="password" type="Password"></ion-input>
+    </ion-item>
+
+    <p><span (click)="singUp()">sign up</span></p>
+
+    <ion-button class="newblue" style="width: 100%;margin-top: 30%" (click)="login()">Login</ion-button>
+  </div>
+
+</ion-content>

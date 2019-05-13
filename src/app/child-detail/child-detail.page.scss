@@ -1,0 +1,35 @@
+ion-content{
+    --background: #fff url('../../assets/img/bg.jpeg') no-repeat center center / cover;
+}
+ion-grid{
+    --background: #fff;
+}
+.img-create{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+      border-style: solid;
+    border-color: #969765;
+    border-width: 10px;
+}
+
+.custom-input{
+    background-color: #DCFED5;
+    border-radius: 20px;
+}
+
+.labal{
+    font-size: 20px;
+    font-weight: 100;
+}
+.gender-label{
+    padding: 0;
+    font-size: 20px;
+    
+}
+.textarea{
+    height: 150px;
+}
+.my-width{
+    width: 140px;
+}

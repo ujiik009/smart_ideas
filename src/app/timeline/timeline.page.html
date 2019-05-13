@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar class="new-background-color-header">
+    <ion-title>ไทม์ไลน์</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="{{family.familyPicture}}">
+    </ion-avatar>
+    <ion-input class="post-input" placeholder="คุณกำลังคิดอะไรอยู่" [(ngModel)]="post_content"></ion-input>
+    <ion-button color="light" (click)="post()">
+        <ion-icon name="send"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <div>
+    <div *ngFor="let board of boards">
+      <app-post [board]="board" [family]="family"></app-post>
+    </div>
+  </div>
+
+
+</ion-content>

@@ -1,0 +1,39 @@
+<div>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="{{board.family_img}}" />
+    </ion-avatar>
+    <ion-label>
+      <h2>{{board.family_name}}</h2>
+      <p>{{board.timestamp}}</p>
+    </ion-label>
+  </ion-item>
+  <div style='display: block;padding: 10px;'>
+    {{board.content}}
+  </div>
+  <div class="comment-click">
+    <span style="color:#8B9CC0" (click)="clickComment()">แสดงความเห็น {{comments.length}}</span>
+  </div>
+
+  <div *ngIf="commentShow">
+    <div *ngFor="let comment of comments">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="{{comment.family_img}}"/>
+        </ion-avatar>
+        <span class="post-input" style="padding: 6px;">{{comment.content}}</span>
+      </ion-item>
+    </div>
+  </div>
+  <div>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="{{family.familyPicture}}"/>
+      </ion-avatar>
+      <ion-input class="post-input" placeholder="เขียนความเห็น" [(ngModel)]="commentContent"></ion-input>
+      <ion-button color="light" (click)="comment()">
+          <ion-icon name="send"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </div>
+</div>

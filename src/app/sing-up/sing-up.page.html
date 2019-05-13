@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar class="new-background-color-header">
+    <ion-title>Sign up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid padding>
+    <ion-row>
+      <ion-col>
+        <span class="labal">E-mail</span>
+      </ion-col>
+      <ion-col>
+        <ion-input class="custom-input" placeholder="" [(ngModel)]="data.email"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">Password</span>
+      </ion-col>
+      <ion-col>
+        <ion-input type="password" class="custom-input" placeholder="" [(ngModel)]="data.password"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="labal">Confirm Password</span>
+      </ion-col>
+      <ion-col>
+        <ion-input type="password" class="custom-input" placeholder="" [(ngModel)]="data.confirm"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div align="center">
+          <ion-button color="success" class="my-width" large (click)="singup()">
+            <b>Sign up</b>
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
